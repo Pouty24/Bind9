@@ -18,12 +18,12 @@ Dans notre exemple la zone DNS sera example.local.</br>
 ``nano /etc/bind/named.conf.local``</br>
 
 Voici la configuration à ajouter à la fin du fichier named.conf.local:
-``
+```
 zone "example.local." {
         type master;
         file "/etc/bind/db.example.local";
 };
-``
+```
 
 Le type master indique que le serveur DNS et maitre il fait donc autorité sur la zone example.local. File permet de specifier la localisation du fichier pour définir les noms comme par exemple cam1.example.local.
 

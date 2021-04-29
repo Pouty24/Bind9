@@ -27,7 +27,7 @@ zone "example.local." {
 Le type master indique que le serveur DNS et maitre il fait donc autorité sur la zone example.local. File permet de specifier la localisation du fichier pour définir les noms comme par exemple cam1.example.local.</br>
 ``nano /etc/bind/named.conf.options``
 
-Voici la configuration à décommenter 
+Voici la configuration à décommenté
 ```
 forwarders {
     1.1.1.1;
